@@ -5,6 +5,7 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    String name = "Jeet";
     return Scaffold(
       appBar: AppBar(
         title: Text("Freedlink"),
@@ -14,7 +15,10 @@ class HomePage extends StatelessWidget {
           child: Text("Hello World! >>>"),
         ),
       ),
-      drawer: Drawer(),
+      drawer: Drawer(
+          child: Center(
+        child: Text("Welcome, ${name}"),
+      )),
     );
   }
 }
